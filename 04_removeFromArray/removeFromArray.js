@@ -1,6 +1,5 @@
-const removeFromArray = function(array, items) {
-  for (i = 1; i < arguments.length; i++) {
-    //console.log(!array.includes(arguments[i]))
+const removeFromArray = function(array) {
+  for (i = 1; i < arguments.length; i++) { //loop through any arguments after array (arg[0])
     if (!array.includes(arguments[i])) {
       continue;
     }
@@ -9,7 +8,7 @@ const removeFromArray = function(array, items) {
   return array;
 }
 
-console.log(removeFromArray([1, 2, 3, 4], 3, "erwogn"))
+//console.log(removeFromArray([1, 2, 3, 4], 3, "erwogn"))
 // Do not edit below this line
 module.exports = removeFromArray;
 
